@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.naudaslaukums = new System.Windows.Forms.TextBox();
             this.masaslaukums = new System.Windows.Forms.TextBox();
             this.poga = new System.Windows.Forms.Button();
@@ -134,8 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(781, 337);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

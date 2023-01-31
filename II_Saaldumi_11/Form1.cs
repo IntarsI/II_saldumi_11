@@ -30,10 +30,10 @@ namespace II_Saaldumi_11
 
         private void poga_Click(object sender, EventArgs e)
         {
-            double sk1 = Convert.ToDouble(naudaslaukums.Text);
-            double sk2 = 9.88;
-            double rezultats = sk1 / sk2;
-            masaslaukums.Text = rezultats.ToString();
+            double sk1 = Convert.ToDouble(naudaslaukums.Text);//definejam ievadito skaitli
+            double sk2 = 9.88;//fikseta cena
+            double rezultats = sk1 / sk2;//aprekinam rezultatu
+            masaslaukums.Text = rezultats.ToString();//izvadam rezultatu
         }
 
         private void Nosaukums_Click(object sender, EventArgs e)
