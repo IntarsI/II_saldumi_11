@@ -16,5 +16,24 @@ namespace II_Saaldumi_11
         {
             InitializeComponent();
         }
+
+        private void naudaslaukums_TextChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void masaslaukums_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void poga_Click(object sender, EventArgs e)
+        {
+            double sk1 = Convert.ToDouble(naudaslaukums.Text);
+            double sk2 = 9.88;
+            double rezultats = sk1 / sk2;
+            masaslaukums.Text = rezultats.ToString();
+        }
     }
 }

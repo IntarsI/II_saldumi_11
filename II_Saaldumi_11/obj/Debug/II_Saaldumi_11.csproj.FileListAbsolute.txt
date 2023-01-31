@@ -1,0 +1,10 @@
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\bin\Debug\II_Saaldumi_11.exe.config
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\bin\Debug\II_Saaldumi_11.exe
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\bin\Debug\II_Saaldumi_11.pdb
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\obj\Debug\II_Saaldumi_11.csprojAssemblyReference.cache
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\obj\Debug\II_Saaldumi_11.Form1.resources
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\obj\Debug\II_Saaldumi_11.Properties.Resources.resources
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\obj\Debug\II_Saaldumi_11.csproj.GenerateResource.cache
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\obj\Debug\II_Saaldumi_11.csproj.CoreCompileInputs.cache
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\obj\Debug\II_Saaldumi_11.exe
+Z:\Programmesana11\II_Saaldumi_11\II_Saaldumi_11\obj\Debug\II_Saaldumi_11.pdb
