@@ -35,5 +35,20 @@ namespace II_Saaldumi_11
             double rezultats = sk1 / sk2;
             masaslaukums.Text = rezultats.ToString();
         }
+
+        private void Nosaukums_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
