@@ -36,11 +36,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Vesma = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // naudaslaukums
             // 
-            this.naudaslaukums.Location = new System.Drawing.Point(46, 226);
+            this.naudaslaukums.Location = new System.Drawing.Point(46, 364);
             this.naudaslaukums.Name = "naudaslaukums";
             this.naudaslaukums.Size = new System.Drawing.Size(291, 20);
             this.naudaslaukums.TabIndex = 0;
@@ -48,7 +53,7 @@
             // 
             // masaslaukums
             // 
-            this.masaslaukums.Location = new System.Drawing.Point(451, 226);
+            this.masaslaukums.Location = new System.Drawing.Point(451, 364);
             this.masaslaukums.Name = "masaslaukums";
             this.masaslaukums.Size = new System.Drawing.Size(291, 20);
             this.masaslaukums.TabIndex = 1;
@@ -60,7 +65,7 @@
             this.poga.BackColor = System.Drawing.Color.Cyan;
             this.poga.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.poga.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.poga.Location = new System.Drawing.Point(201, 252);
+            this.poga.Location = new System.Drawing.Point(201, 390);
             this.poga.Name = "poga";
             this.poga.Size = new System.Drawing.Size(376, 64);
             this.poga.TabIndex = 2;
@@ -89,16 +94,15 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(195, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 33);
+            this.label1.Size = new System.Drawing.Size(0, 33);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Saldumu cena ir 9.88 Eur/kg";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label2.Location = new System.Drawing.Point(43, 210);
+            this.label2.Location = new System.Drawing.Point(43, 348);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(320, 13);
             this.label2.TabIndex = 5;
@@ -123,18 +127,78 @@
             this.label4.BackColor = System.Drawing.SystemColors.Info;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(448, 210);
+            this.label4.Location = new System.Drawing.Point(468, 348);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(254, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Cik kilogramus saldumu jus varat iegadaties";
             // 
+            // Vesma
+            // 
+            this.Vesma.AutoSize = true;
+            this.Vesma.Location = new System.Drawing.Point(133, 145);
+            this.Vesma.Name = "Vesma";
+            this.Vesma.Size = new System.Drawing.Size(118, 17);
+            this.Vesma.TabIndex = 8;
+            this.Vesma.Text = "Vēsma 7,56 Eur/kg";
+            this.Vesma.UseVisualStyleBackColor = true;
+            this.Vesma.CheckedChanged += new System.EventHandler(this.Vesma_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(133, 168);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(138, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Serenāde 15,49 Eur/kg";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(133, 191);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(122, 17);
+            this.checkBox2.TabIndex = 10;
+            this.checkBox2.Text = "Bārbele 5,76 Eur/kg";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(133, 214);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(147, 17);
+            this.checkBox3.TabIndex = 11;
+            this.checkBox3.Text = "Rudzupuķe 14,99 Eur/kg";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(133, 237);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(242, 17);
+            this.checkBox4.TabIndex = 12;
+            this.checkBox4.Text = "Šok. konf. ķirši liķierī PERGALE 21,69 Eur/kg";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(781, 337);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(787, 466);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.Vesma);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -160,6 +224,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox Vesma;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }
 
