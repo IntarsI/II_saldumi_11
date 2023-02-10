@@ -83,14 +83,17 @@ kg2 = Convert.ToDouble(textBox2.Text);//definejam ievadito skaitli
                 kg5 = Convert.ToDouble(textBox5.Text);//definejam ievadito skaitli
 
             }
-                
-               
-
             nauda3 = sk6 * kg5;
                 nauda4 = sk5 * kg4;
                 nauda5 = sk4 * kg3;
                 nauda2 = sk2 * kg2;
                 nauda1 = sk3 * kg1;
+
+            textBox6.Text = nauda1.ToString();
+            textBox7.Text = nauda2.ToString();
+            textBox8.Text = nauda5.ToString();
+            textBox9.Text = nauda4.ToString();
+            textBox10.Text = nauda3.ToString();
 
             atlikums = sk1 - nauda1 - nauda2 - nauda3 - nauda4 - nauda5;
             masaslaukums.Text = atlikums.ToString();//izvadam rezultatu
@@ -176,6 +179,17 @@ kg2 = Convert.ToDouble(textBox2.Text);//definejam ievadito skaitli
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+           
 
         }
     }
