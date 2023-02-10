@@ -51,14 +51,42 @@ namespace II_Saaldumi_11
            sk1 = Convert.ToDouble(naudaslaukums.Text);//definejam ievadito skaitli
             //cena = (sk2 + sk3 + sk4 + sk5 + sk6) / skaits; 
             //double rezultats = sk1 / cena;//aprekinam rezultatu
-
-            
+            if (textBox1.Text== "")
+            { kg1 = 0; }
+            else
+            {
             kg1 = Convert.ToDouble(textBox1.Text);//definejam ievadito skaitli
-                kg2 = Convert.ToDouble(textBox2.Text);//definejam ievadito skaitli
-                kg3 = Convert.ToDouble(textBox3.Text);//definejam ievadito skaitli
+
+            }
+            if (textBox2.Text == "")
+            { kg2 = 0; }
+            else
+            {
+kg2 = Convert.ToDouble(textBox2.Text);//definejam ievadito skaitli
+            }
+            if (textBox3.Text == "")
+            { kg3 = 0; }
+            else
+            {
+ kg3 = Convert.ToDouble(textBox3.Text);//definejam ievadito skaitli
+            }
+            if (textBox4.Text == "")
+            { kg4 = 0; }
+            else
+            {
                 kg4 = Convert.ToDouble(textBox4.Text);//definejam ievadito skaitli
+            }
+            if (textBox5.Text == "")
+            { kg5 = 0; }
+            else
+            {
                 kg5 = Convert.ToDouble(textBox5.Text);//definejam ievadito skaitli
-                nauda3 = sk6 * kg5;
+
+            }
+                
+               
+
+            nauda3 = sk6 * kg5;
                 nauda4 = sk5 * kg4;
                 nauda5 = sk4 * kg3;
                 nauda2 = sk2 * kg2;
