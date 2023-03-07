@@ -83,11 +83,11 @@ kg2 = Convert.ToDouble(textBox2.Text);
                 kg5 = Convert.ToDouble(textBox5.Text);
 
             }
-            double rez = aprekini(sk6, kg5, nauda3);
-            double rez1 = aprekini1(sk5, kg4, nauda4);
-            double rez2 = aprekini2(sk4, kg3, nauda5);
-            double rez3 = aprekini3(sk2, kg2, nauda2);
-            double rez4 = aprekini4(sk3, kg1, nauda1);
+            double rez = aprekini(sk6, kg5);
+            double rez1 = aprekini1(sk5, kg4);
+            double rez2 = aprekini2(sk4, kg3);
+            double rez3 = aprekini3(sk2, kg2);
+            double rez4 = aprekini4(sk3, kg1);
             textBox6.Text = rez4.ToString();
             textBox7.Text = rez3.ToString();
             textBox8.Text = rez2.ToString();
@@ -96,49 +96,24 @@ kg2 = Convert.ToDouble(textBox2.Text);
             atlikums = sk1 - rez4 - rez3 - rez - rez1 - rez2;
             if (atlikums < 0)
             {
-                MessageBox.Show("Par maz naudas");
+                zinojums(atlikums);
             }
-            masaslaukums.Text = atlikums.ToString();//izvadam rezultatu
-           string vards = textBox11.Text;
-          string nosaukums = vards + "_" + DateTime.Now.ToString("ddMMyyyy") + "_ceks.txt";
-StreamWriter faila_rakstitajs = new StreamWriter (nosaukums);
-            faila_rakstitajs.WriteLine("Iedots ");
-            faila_rakstitajs.WriteLine(sk1);
-            if (rez != 0)
+
+            else
             {
-    faila_rakstitajs.WriteLine("Likiera konfektes Pergale " + kg5 + "kg");
-            faila_rakstitajs.WriteLine(rez + "Eur");
-
+                if (textBox11.Text == "")
+                {
+                    zinojumsvards();
+                }
+                else
+                {
+                    masaslaukums.Text = atlikums.ToString();//izvadam rezultatu
+                    string vards = textBox11.Text;
+                    string nosaukums = vards + "_" + DateTime.Now.ToString("ddMMyyyy") + "_ceks.txt";
+                    ierakstisana( nosaukums,  sk1,  rez1,  rez2,  rez3,  rez4,  rez,  kg1,  kg2,  kg3,  kg4,  kg5,  atlikums);
+                    
+                }
             }
-        if(rez1 != 0)
-            {             faila_rakstitajs.WriteLine("Rudzupuke " + kg4 + "kg");
-            faila_rakstitajs.WriteLine(rez1 + "Eur");
-
-            }
-            if (rez2 != 0)
-            {
- faila_rakstitajs.WriteLine("Barbele " + kg3 + "kg");
-            faila_rakstitajs.WriteLine(rez2 + "Eur");
-            }
-            if (rez3 != 0)
-            {
- faila_rakstitajs.WriteLine("Serenade " + kg2 + "kg");
-            faila_rakstitajs.WriteLine(rez3 + "Eur");
-
-            }
-            if (rez4 != 0)
-            {
- faila_rakstitajs.WriteLine("Vesma " + kg1 + "kg");
-            faila_rakstitajs.WriteLine(rez4 + "Eur");
-
-            }
-
-
-               
-            faila_rakstitajs.WriteLine("Izdots ");
-            faila_rakstitajs.WriteLine(atlikums + "Eur");
-            faila_rakstitajs.Close();
-
         }
 
         private void Nosaukums_Click(object sender, EventArgs e)
@@ -161,7 +136,7 @@ StreamWriter faila_rakstitajs = new StreamWriter (nosaukums);
             if (checkBox1.Checked == true)
             {
                 sk2 = 15.49;
-                skaits = skaits + 1;
+
 
             }
 
@@ -173,7 +148,7 @@ StreamWriter faila_rakstitajs = new StreamWriter (nosaukums);
             if (Vesma.Checked == true)
             {
                 sk3 = 7.56;
-                skaits = skaits + 1;
+
                 
             }
 
@@ -184,7 +159,7 @@ StreamWriter faila_rakstitajs = new StreamWriter (nosaukums);
             if (checkBox4.Checked == true)
             {
                 sk6 = 21.69;
-                skaits = skaits + 1;
+             
 
             }
         }
@@ -194,7 +169,7 @@ StreamWriter faila_rakstitajs = new StreamWriter (nosaukums);
             if (checkBox3.Checked == true)
             {
                 sk5 = 14.99;
-                skaits = skaits + 1;
+          
 
             }
         }
@@ -204,7 +179,7 @@ StreamWriter faila_rakstitajs = new StreamWriter (nosaukums);
             if (checkBox2.Checked == true)
             {
                 sk4 = 5.76;
-                skaits = skaits + 1;
+
 
             }
         }
@@ -233,35 +208,89 @@ StreamWriter faila_rakstitajs = new StreamWriter (nosaukums);
         {
          
         }
-       static double  aprekini(double sk6, double kg5, double nauda3)
+       static double  aprekini(double sk6, double kg5)
         {
+            double nauda3;
             nauda3 = sk6 * kg5;
             return nauda3;
              
         }
-        static double aprekini1(double sk5, double kg4, double nauda4)
+        static double aprekini1(double sk5, double kg4 )
         {
+            double nauda4;
             nauda4 = sk5 * kg4;
             return nauda4;
 
         }
-        static double aprekini2(double sk4, double kg3, double nauda5)
+        static double aprekini2(double sk4, double kg3)
         {
+            double nauda5;
             nauda5 = sk4 * kg3;
             return nauda5;
 
         }
-        static double aprekini3(double sk2, double kg2, double nauda2)
+        static double aprekini3(double sk2, double kg2 )
         {
+            double nauda2;
             nauda2 = sk2 * kg2;
             return nauda2;
 
         }
-        static double aprekini4(double sk3, double kg1, double nauda1)
+        static double aprekini4(double sk3, double kg1  )
         {
+            double nauda1;
             nauda1 = sk3 * kg1;
             return nauda1;
 
+        }
+        static void zinojums(double atlikums)
+        {
+            MessageBox.Show("Par maz naudas");
+        }
+        static void zinojumsvards()
+        {
+            MessageBox.Show("Ievadiet savu vardu");
+        }
+        static void ierakstisana (string nosaukums, double sk1, double rez1, double rez2, double rez3, double rez4, double rez, double kg1, double kg2, double kg3, double kg4, double kg5, double atlikums)
+        {
+StreamWriter faila_rakstitajs = new StreamWriter(nosaukums);
+                    faila_rakstitajs.WriteLine("Iedots ");
+                    faila_rakstitajs.WriteLine(sk1);
+                    if (rez != 0)
+                    {
+                        faila_rakstitajs.WriteLine("Likiera konfektes Pergale " + kg5 + "kg");
+                        faila_rakstitajs.WriteLine(rez + "Eur");
+                    }
+                    if (rez1 != 0)
+                    {
+                        faila_rakstitajs.WriteLine("Rudzupuke " + kg4 + "kg");
+                        faila_rakstitajs.WriteLine(rez1 + "Eur");
+
+                    }
+                    if (rez2 != 0)
+                    {
+                        faila_rakstitajs.WriteLine("Barbele " + kg3 + "kg");
+                        faila_rakstitajs.WriteLine(rez2 + "Eur");
+                    }
+                    if (rez3 != 0)
+                    {
+                        faila_rakstitajs.WriteLine("Serenade " + kg2 + "kg");
+                        faila_rakstitajs.WriteLine(rez3 + "Eur");
+
+                    }
+                    if (rez4 != 0)
+                    {
+                        faila_rakstitajs.WriteLine("Vesma " + kg1 + "kg");
+                        faila_rakstitajs.WriteLine(rez4 + "Eur");
+
+                    }
+
+
+
+                    faila_rakstitajs.WriteLine("Izdots ");
+                    faila_rakstitajs.WriteLine(atlikums + "Eur");
+                    faila_rakstitajs.Close();
+                    MessageBox.Show("Paldies par pirkumu!");
         }
     }
 }
