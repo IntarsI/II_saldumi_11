@@ -1,0 +1,8 @@
+Iedots 
+40
+Barbele 
+11,52
+Vesma 
+7,56
+Izdots 
+20,92

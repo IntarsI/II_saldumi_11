@@ -52,6 +52,9 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // naudaslaukums
@@ -64,7 +67,7 @@
             // 
             // masaslaukums
             // 
-            this.masaslaukums.Location = new System.Drawing.Point(731, 245);
+            this.masaslaukums.Location = new System.Drawing.Point(685, 245);
             this.masaslaukums.Name = "masaslaukums";
             this.masaslaukums.Size = new System.Drawing.Size(291, 20);
             this.masaslaukums.TabIndex = 1;
@@ -91,7 +94,7 @@
             this.Nosaukums.BackColor = System.Drawing.SystemColors.Info;
             this.Nosaukums.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.Nosaukums.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Nosaukums.Location = new System.Drawing.Point(3, 9);
+            this.Nosaukums.Location = new System.Drawing.Point(233, 9);
             this.Nosaukums.Name = "Nosaukums";
             this.Nosaukums.Size = new System.Drawing.Size(785, 55);
             this.Nosaukums.TabIndex = 3;
@@ -273,11 +276,36 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(852, 229);
+            this.label5.Location = new System.Drawing.Point(808, 229);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 24;
             this.label5.Text = "Atlikums";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(685, 127);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(277, 20);
+            this.textBox11.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(777, 111);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 13);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Ievadiet savu vardu";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(262, 200);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(177, 13);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Cik kilogramus konfeksu jus velaties";
             // 
             // Form1
             // 
@@ -285,6 +313,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1251, 466);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox10);
@@ -342,6 +373,9 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
